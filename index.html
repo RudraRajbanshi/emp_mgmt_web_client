@@ -14,14 +14,36 @@
     <div class="container">
         <div class="form-group">
 
-            <form action="" method="POST">
-                Username: <input type="text" name="username" id="username" required class="form-control"><br> Password: <input type="password" name="password" id="password" required class="form-control"><br>
-                <button class="btn btn-primary">Login</button>
-            </form>
+
+            Username: <input type="text" name="username" id="username" required><br> Password: <input type="password" name="password" id="password" required><br>
+            <button id="login">Login</button>
+
 
         </div>
 
     </div>
+
+
+    <script>
+        const button = document.getElementById('login');
+        button.addEventListener('click', function onClick(e) {
+
+            const usernameNode = document.getElementById('username');
+            const passwordNode = document.getElementById('password');
+
+            const usernameValue = usernameNode.value;
+            const passwordValue = passwordNode.value;
+
+            // if (usernameNode == "admin" && passwordNode == "admin") {
+            //     window.location = "dashboard.html";
+            // } else {
+            //     console.log("sdasda");
+            // }
+
+            console.log(usernameValue, passwordValue);
+
+        })
+    </script>
 </body>
 
 </html>
